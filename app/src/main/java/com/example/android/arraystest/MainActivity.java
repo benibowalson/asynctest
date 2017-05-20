@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         try {
 
             ConnectivityChecker check = new ConnectivityChecker(this);
+            check.execute();
             Toast.makeText(this, DeviceIsOnline? "Yep": "Nay", Toast.LENGTH_LONG).show();
 
         } catch (Exception ex){
